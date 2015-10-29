@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Centrar botones con espacio entre ellos</title>
+
+	<style>
+		body {
+			background: #FF8080;
+			padding: 8% 20%;
+		}
+
+			h1 { text-align: center; }
+
+			.botones {
+				background: white;
+				border:  1px solid grey;
+				margin:  20px 0;
+				padding: 5%;
+				text-align: center; /* Centrado de los botones */
+			}
+			
+				.btn {
+					border: 1px solid blue;
+					border-radius: 5px;
+					color: navy;
+					display: inline-block;
+					padding: 10px 20px;
+				}
+					
+					/* Para el espaciado usando clases */
+					.espacio-a-los-lados {
+						margin-left:  15px; 
+						margin-right: 15px;
+					}
+					
+					/* Para el espaciado usando pseudo-clases */
+					.pse { margin-right: 15px; }
+					.pse:last-child { margin-right: 0; }
+	
+	</style>
+</head>
+<body>
+	
+	<h1>Centrado de botones con espacio entre ellos</h1>
+
+	<div class="botones">
+		<h2>Centrado con clases</h2>
+		
+		<a class="btn" href="">a</a>
+	    <a class="btn espacio-a-los-lados" href="">b</a>
+	    <a class="btn" href="">c</a>
+	    <a class="btn espacio-a-los-lados" href="">d</a>
+	    <a class="btn" href="">e</a>
+	</div>
+
+	<div class="botones">
+		<h2>Centrado con pseudo-clases</h2>
+		
+		<a class="btn pse" href="">a</a>
+    	<a class="btn pse" href="">b</a>
+    	<a class="btn pse" href="">c</a>
+    	<a class="btn pse" href="">d</a>
+    	<a class="btn pse" href="">e</a>
+	</div>
+
+</body>
+</html>
+
+    
